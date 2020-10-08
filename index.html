@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Specification</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo">
+          <img src="/images/logo.png" alt="" />
+        </div>
+        <div class="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Phone</a>
+          </li>
+          <li>
+            <a href="#">Accessories</a>
+          </li>
+          <li>
+            <a href="#">Cart</a>
+          </li>
+        </div>
+      </nav>
+
+      <div class="main-section">
+        <div class="overlay"></div>
+        <img src="/images/mobile.png" alt="" class="mobile-phone" />
+        <div class="info">
+          <div id="rotation">
+            <div class="feature display">
+              <img src="/images/display.png" alt="" />
+            </div>
+            <div class="feature camera">
+              <img src="/images/camera.png" alt="" />
+            </div>
+            <div class="feature processor">
+              <img src="/images/processor.png" alt="" />
+            </div>
+            <div class="feature battery">
+              <img src="/images/battery.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="upDownButtons">
+          <img id="upBtn" src="/images/arrow.png" alt="" />
+          Features
+          <img id="downBtn" src="/images/arrow.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var rotation = document.getElementById("rotation");
+      var upBtn = document.getElementById("upBtn");
+      var downBtn = document.getElementById("downBtn");
+
+      var rotVal = rotation.style.transform;
+      var rotSum;
+
+      upBtn.onclick = function () {
+        rotSum = rotVal + "rotate(-90deg)";
+        rotation.style.transform = rotSum;
+        rotVal = rotSum;
+      };
+
+      downBtn.onclick = function () {
+        rotSum = rotVal + "rotate(90deg)";
+        rotation.style.transform = rotSum;
+        rotVal = rotSum;
+      };
+    </script>
+  </body>
+</html>

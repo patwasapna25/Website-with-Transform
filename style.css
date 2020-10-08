@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.02em;
+  font-weight: 400;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+nav {
+  width: 90%;
+  padding-top: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.logo img {
+  width: 80%;
+}
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
+.main-section {
+  width: 90%;
+  height: 850px;
+  margin: auto;
+  display: flex;
+}
+
+.info {
+  width: 80%;
+}
+
+.info img {
+  width: 5em;
+}
+
+#rotation {
+  width: 850px;
+  height: 850px;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.display {
+  position: relative;
+  top: 390px;
+}
+
+.display img {
+  transform: rotate(-180deg);
+}
+
+.camera {
+  position: relative;
+  top: -100px;
+  left: 370px;
+}
+
+.processor {
+  position: relative;
+  bottom: -550px;
+  left: 370px;
+}
+
+.processor img {
+  transform: rotate(90deg);
+}
+
+.battery {
+  position: relative;
+  bottom: -100px;
+  left: 760px;
+}
+
+.mobile-phone {
+  position: absolute;
+  width: 200px;
+  top: 275px;
+  left: 405px;
+}
+
+.upDownButtons {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.upDownButtons img {
+  display: block;
+  margin: auto;
+  width: 1.5em;
+  cursor: pointer;
+}
+
+#downBtn {
+  transform: rotate(180deg);
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  border-top: 500px solid #ffff;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid #ffff;
+  border-left: 500px solid #ffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
